@@ -5,12 +5,12 @@
 /*
 const mongoose = require('mongoose');
 const client = require('mongodb').MongoClient;
-const urii = "mongodb+srv://charliefactory9090:Fatalmilly1@sit314.rn3gcfu.mongodb.net/sit314"
+const urii = "mongodb+srv:......"
 
 
 
 
-mongoose.connect("mongodb+srv://charliefactory9090:Fatalmilly1@sit314.rn3gcfu.mongodb.net/sit314", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://......", {useNewUrlParser: true});
 const Sensor = new mongoose.Schema({
     id_: Number,
     name: String,
@@ -29,7 +29,7 @@ mongoose.connection.startSession();
 const MongoClientt = require('mongodb').MongoClient;
 
 // Replace the uri string with your MongoDB deployment's connection string.
-const uri = "mongodb+srv://charliefactory9090:Fatalmilly1@sit314.rn3gcfu.mongodb.net/sit314";
+const uri = "mongodb+srv://.....";
 
 const client = new MongoClientt(uri);
 
