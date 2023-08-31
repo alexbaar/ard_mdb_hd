@@ -108,7 +108,7 @@ async function Push() {
     result2=fruitCollection.updateOne(
 // find by chosen field & value
       //{_id: "ObjectId('64e9966ad693630ff4f1f5f8')"},
-      //{quantity: 22},
+      //{address: "someValue"},
       {name: "temperaturesensor"},
 // push to array (make sure its set to an array of objects in Mongo collection view)
     {$push: {
