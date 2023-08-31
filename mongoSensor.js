@@ -102,7 +102,7 @@ async function Push() {
     // this option instructs the method to create a document (if set to true) if no documents match the filter
     const options = { upsert: false };
     
-    // Push some values to an array for the record specified in line 60
+    // Push some values to an array for the record specified in line 100
     // need to make sure the data string was populated first
     if (data1 !== "") {
     result2=fruitCollection.updateOne(
@@ -130,8 +130,8 @@ async function Push() {
 //Push().catch(console.dir);
 
 // so Push() is called either from:
-// * callfunction() at line 121   or
-// * directly after recording values at line 19 (better option, records are taken & sent to mongo every second)
+// * callfunction() at line 150   or
+// * directly after recording values at line 46 (better option, records are taken & sent to mongo every second)
 
 
 // call a function x times -> we get records in mongo
