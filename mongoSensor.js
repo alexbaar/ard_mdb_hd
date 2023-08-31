@@ -24,7 +24,7 @@ mongoose.connection.startSession();
 */
 
 //                                              PART 2
-
+// keep part 1 commented out
 //import { MongoClient } from "mongodb";
 const MongoClientt = require('mongodb').MongoClient;
 
