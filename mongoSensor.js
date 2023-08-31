@@ -8,8 +8,8 @@ const client = require('mongodb').MongoClient;
 const urii = "mongodb+srv:......"
 
 
-
-
+// create a table in MongoDb with the following field names and data types:
+                    // at the end of the conn string add '/dbName', in my case it was '/sit314'
 mongoose.connect("mongodb+srv://......", {useNewUrlParser: true});
 const Sensor = new mongoose.Schema({
     id_: Number,
@@ -18,7 +18,7 @@ const Sensor = new mongoose.Schema({
     record:[{time: Date, temperature:String}],
 });
 
-const Sens = mongoose.model("sensorsburwoods" , Sensor);
+const Sens = mongoose.model("sensorsburwoods" , Sensor);  // the name of the table is 'sensorsburwoods'
 mongoose.connection.startSession();
 
 */
