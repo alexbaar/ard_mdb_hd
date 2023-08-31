@@ -52,10 +52,10 @@ async function Update() {
     const database = client.db("sit314");
     const fruitCollection = database.collection("sensorsburwoods");
 
-    // create a filter for a fruit to update
+    // create a filter regarding which record to update
     const filter = { name: "temperaturesensor" };
 
-    // this option instructs the method to create a document if no documents match the filter
+    // this option instructs the method to create a document if no documents match the filter (true = create if non existent)
     const options = { upsert: true };
 
     // create a document that sets the variable to a new value
@@ -113,7 +113,7 @@ async function Push() {
 // push to array (make sure its set to an array of objects in Mongo collection view)
     {$push: {
         record:
-          {time:Date(),temperature:data1}  
+          {time:Date(),temperature:data1}  // other dates formats: https://www.prisma.io/dataguide/mongodb/working-with-dates 
     }
     },
 // a helper filter if many records fetched; we can set as many as we need
