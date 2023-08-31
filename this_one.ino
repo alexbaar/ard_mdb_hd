@@ -1,4 +1,4 @@
-
+// credit: https://computers.tutsplus.com/how-to-read-temperatures-with-arduino--mac-53714t 
 #include <math.h> //loads the more advanced math functions 
 void setup() {            //This function gets called when the Arduino starts
   Serial.begin(115200);   //This code sets up the Serial port at 115200 baud rate
